@@ -73,7 +73,7 @@ public class PaymentInfoServiceImpl extends ServiceImpl<PaymentInfoMapper, Payme
         if (null == paymentInfo) {
             throw new MyYyxtException(ResultCodeEnum.PARAM_ERROR);
         }
-        if(paymentInfo.getPaymentStatus() != PaymentStatusEnum.UNPAID.getStatus()){
+        if(paymentInfo.getPaymentStatus().equals(PaymentStatusEnum.UNPAID.getStatus())){
             return;
         }
 

@@ -44,6 +44,7 @@ public class HttpClient {
     private boolean isCert = false;
     //证书密码 微信商户号（mch_id）
     private String certPassword;
+
     public boolean isHttps() {
         return isHttps;
     }
